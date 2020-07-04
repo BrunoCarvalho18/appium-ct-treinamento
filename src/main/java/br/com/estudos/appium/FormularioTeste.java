@@ -68,9 +68,9 @@ public class FormularioTeste extends BaseTest{
      
 		//Clicar no Salvar Demorado
 		DriverFactory.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-        form.salvarDemorado();
-        //esperar(3000);
-        WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(),5);
+                form.salvarDemorado();
+                //esperar(3000);
+                WebDriverWait wait = new WebDriverWait(DriverFactory.getDriver(),5);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Nome: Bruno']")));
 		
 		//Verificacoes
