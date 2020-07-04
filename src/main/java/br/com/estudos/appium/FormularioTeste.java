@@ -47,7 +47,7 @@ public class FormularioTeste extends BaseTest{
 		form.clicarPorTexto("OK");
      
 		//Clicar no Salvar
-        form.salvar();
+                form.salvar();
 		
 		//Verificacoes
 		Assert.assertEquals("Nome: Bruno",form.obterNomeCadastrado());
